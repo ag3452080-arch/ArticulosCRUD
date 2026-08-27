@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace ArticulosCRUD
@@ -35,6 +36,13 @@ namespace ArticulosCRUD
                         break;
                 }
             }
+        } // <- llave añadida para cerrar MostrarMenu
+
+        public void MostrarAgregar()
+        {
+            Console.Clear();
+            Console.WriteLine("Opcion Agregar Seleccionada");
+            Console.WriteLine();
         }
     }
 }
