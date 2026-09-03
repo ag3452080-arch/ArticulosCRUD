@@ -55,22 +55,35 @@ namespace ArticulosCRUD
                         MostrarBuscar();
                         break;
                     case "4":
-                        MostrarModificar();
+                        MostrarBusacarNombre();
                         break;
                     case "5":
-                        MostrarEliminar();
-                        break;
-                    default:
-                        Console.WriteLine("Opción Inválida");
-                        Console.ReadLine();
-                        break;
+                            MostrarModificar();
+                            break;
+                        case "6":
+                            MostrarEliminar();
+                            break;
+                        default:
+                            Console.WriteLine("Opción Inválida");
+                            Console.ReadLine();
+                            break;
 
-                }
+                        }
 
             }
 
 
         }
+
+        private void MostrarBusacarNombre()
+        {
+            Console.WriteLine("Buscar Por nombre");
+            Console.WriteLine("================");
+            Console.WriteLine();
+            Console.Write("Nombre: ");
+            string nombre = Console.ReadLine();
+        }
+
         public void MostrarAgregar()
         {
             Console.Clear();
